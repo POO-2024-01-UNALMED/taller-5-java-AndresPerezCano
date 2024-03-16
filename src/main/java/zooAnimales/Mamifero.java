@@ -27,7 +27,7 @@ public class Mamifero extends Animal{
 	}
 	
 	
-	public Mamifero crearCaballo(String nombre, int edad, String genero) {
+	public Animal crearCaballo(String nombre, int edad, String genero) {
 	    setHabitat("pradera");
 	    pelaje = true;
 	    patas = 4;
@@ -37,7 +37,7 @@ public class Mamifero extends Animal{
 		return mamifero;
 	}
 	
-	public Mamifero crearLeon(String nombre, int edad, String genero) {
+	public Animal crearLeon(String nombre, int edad, String genero) {
 	    setHabitat("selva");
 	    pelaje = true;
 	    patas = 4;
