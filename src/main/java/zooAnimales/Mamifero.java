@@ -31,18 +31,20 @@ public class Mamifero extends Animal{
 	    setHabitat("pradera");
 	    pelaje = true;
 	    patas = 4;
-		listado.add(new Mamifero(nombre,edad,getHabitat(),genero,pelaje,patas));	
+	    Mamifero mamifero = new Mamifero(nombre,edad,getHabitat(),genero,pelaje,patas);
+		listado.add(mamifero);	
 		caballos++;
-		return new Mamifero();
+		return mamifero;
 	}
 	
 	public Mamifero crearLeon(String nombre, int edad, String genero) {
 	    setHabitat("selva");
 	    pelaje = true;
 	    patas = 4;
-		listado.add(new Mamifero(nombre,edad,getHabitat(),genero,pelaje,patas));	
+	    Mamifero mamifero = new Mamifero(nombre,edad,getHabitat(),genero,pelaje,patas);
+		listado.add(mamifero);	
 		leones++;
-		return new Mamifero();
+		return mamifero;
 	}
 	
 	public void setListado(ArrayList<Mamifero> listado) {
