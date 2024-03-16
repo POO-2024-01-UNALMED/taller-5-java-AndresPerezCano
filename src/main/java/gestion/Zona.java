@@ -24,7 +24,8 @@ public class Zona {
 		int cantAnim = 0;
 		for(Animal animal : animales) {
 			if (animal != null) {
-			cantAnim++;}
+			cantAnim += 1;
+			}
 		}
 		return cantAnim;
 	}
