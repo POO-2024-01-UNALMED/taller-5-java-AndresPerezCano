@@ -43,9 +43,8 @@ public class Animal {
     public String toString() {
          String info = "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + "y mi genero es " + genero;
          if (zona != null) {
-        	 info += ", la zona en la que me ubico es " + zona.getNombre();
+        	 info += ", la zona en la que me ubico es " + zona.getNombre() + ", en el " + zona.getZoo().getNombre();
          }
-         info += ", en el " + zona.getZoo().getNombre();
          return info;
     }
     public int getTotalAnimales() {
