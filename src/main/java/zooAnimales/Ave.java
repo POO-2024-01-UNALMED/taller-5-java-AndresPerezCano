@@ -28,18 +28,20 @@ public class Ave extends Animal {
 		return "volar";
 	}
 	
-	public void crearHalcon(String nombre, int edad, String genero) {
+	public Ave crearHalcon(String nombre, int edad, String genero) {
 	    setHabitat("montanas");
 	    colorPlumas = "cafe glorioso";
 		listado.add(new Ave(nombre,edad,getHabitat(),genero,colorPlumas));	
 		halcones++;
+		return new Ave();
 	}
 	
-	public void crearAguila(String nombre, int edad, String genero) {
+	public Ave crearAguila(String nombre, int edad, String genero) {
 	    setHabitat("montanas");
 	    colorPlumas = "blanco y amarillo";
 		listado.add(new Ave(nombre,edad,getHabitat(),genero,colorPlumas));	
 		aguilas++;
+		return new Ave();
 	}
 	
 	public void setListado(ArrayList<Ave> listado) {

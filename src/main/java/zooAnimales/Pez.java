@@ -30,20 +30,22 @@ public class Pez extends Animal{
 		return "nadar";
 	}
 	
-	public void crearSalmon(String nombre, int edad, String genero) {
+	public 	Pez crearSalmon(String nombre, int edad, String genero) {
 	    setHabitat("oceano");
 	    colorEscamas = "rojo";
 	    cantidadAletas = 6;
 		listado.add(new Pez(nombre,edad,getHabitat(),genero,colorEscamas,cantidadAletas));	
 		salmones++;
+		return new Pez();
 	}
 	
-	public void crearBacalao(String nombre, int edad, String genero) {
+	public Pez crearBacalao(String nombre, int edad, String genero) {
 	    setHabitat("oceano");
 	    colorEscamas = "gris";
 	    cantidadAletas = 6;
 		listado.add(new Pez(nombre,edad,getHabitat(),genero,colorEscamas,cantidadAletas));	
 		bacalaos++;
+		return new Pez();
 	}
 	
 	public void setListado(ArrayList<Pez> listado) {

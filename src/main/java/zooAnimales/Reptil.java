@@ -30,20 +30,22 @@ public class Reptil extends Animal {
 		return "reptar";
 	}
 	
-	public void crearIguana(String nombre, int edad, String genero) {
+	public Reptil crearIguana(String nombre, int edad, String genero) {
 	    setHabitat("humedal");
 	    colorEscamas = "verde";
 	    largoCola = 3;
 		listado.add(new Reptil(nombre,edad,getHabitat(),genero,colorEscamas,largoCola));	
 		iguanas++;
+		return new Reptil();
 	}
 	
-	public void crearSerpiente(String nombre, int edad, String genero) {
+	public Reptil crearSerpiente(String nombre, int edad, String genero) {
 	    setHabitat("jungla");
 	    colorEscamas = "blanco";
 	    largoCola = 1;
 		listado.add(new Reptil(nombre,edad,getHabitat(),genero,colorEscamas,largoCola));	
 		serpientes++;
+		return new Reptil();
 	}
 	
 	public void setListado(ArrayList<Reptil> listado) {
