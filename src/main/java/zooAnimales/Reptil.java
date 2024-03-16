@@ -3,9 +3,9 @@ package zooAnimales;
 import java.util.ArrayList;
 
 public class Reptil extends Animal {
-	private ArrayList<Reptil> listado;
-	public int iguanas;
-	public int serpientes;
+	private static ArrayList<Reptil> listado;
+	public static int iguanas;
+	public static int serpientes;
 	private String colorEscamas;
 	private int largoCola;
 	
@@ -30,26 +30,22 @@ public class Reptil extends Animal {
 		return "reptar";
 	}
 	
-	public Reptil crearIguana(String nombre, int edad, String genero) {
-	    setHabitat("humedal");
-	    colorEscamas = "verde";
-	    largoCola = 3;
-		listado.add(new Reptil(nombre,edad,getHabitat(),genero,colorEscamas,largoCola));	
+	public static Reptil crearIguana(String nombre, int edad, String genero) {
+		Reptil reptil = new Reptil(nombre,edad,"humedal",genero,"verde",3);
+		listado.add(reptil);	
 		iguanas++;
-		return new Reptil();
+		return reptil;
 	}
 	
-	public Reptil crearSerpiente(String nombre, int edad, String genero) {
-	    setHabitat("jungla");
-	    colorEscamas = "blanco";
-	    largoCola = 1;
-		listado.add(new Reptil(nombre,edad,getHabitat(),genero,colorEscamas,largoCola));	
+	public static Reptil crearSerpiente(String nombre, int edad, String genero) {
+		Reptil reptil = new Reptil(nombre,edad,"jungla",genero,"blanco",1);
+		listado.add(reptil);	
 		serpientes++;
-		return new Reptil();
+		return reptil;
 	}
 	
-	public void setListado(ArrayList<Reptil> listado) {
-		this.listado = listado;
+	public static void setListado(ArrayList<Reptil> lista) {
+		listado = lista;
 	}
 	public ArrayList<Reptil> getListado() {
 		return listado;

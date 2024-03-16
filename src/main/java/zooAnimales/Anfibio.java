@@ -3,9 +3,9 @@ package zooAnimales;
 import java.util.ArrayList;
 
 public class Anfibio extends Animal {
-	private ArrayList<Anfibio> listado;
-	public int ranas;
-	public int salamandras;
+	private static ArrayList<Anfibio> listado;
+	public static int ranas;
+	public static int salamandras;
 	private String colorPiel;
 	private boolean venenoso;
 	
@@ -30,26 +30,22 @@ public class Anfibio extends Animal {
 		return "saltar";
 	}
 	
-	public Anfibio crearRana(String nombre, int edad, String genero) {
-	    setHabitat("selva");
-	    colorPiel = "rojo";
-	    venenoso = true;
-		listado.add(new Anfibio(nombre,edad,getHabitat(),genero,colorPiel,venenoso));	
+	public static Anfibio crearRana(String nombre, int edad, String genero) {
+	    Anfibio anfibio = new Anfibio(nombre,edad,"selva",genero,"rojo",true);
+		listado.add(anfibio);	
 		ranas++;
-		return new Anfibio();
+		return anfibio;
 	}
 	
-	public Anfibio crearSalamandra(String nombre, int edad, String genero) {
-	    setHabitat("selva");
-	    colorPiel = "negro y amarillo";
-	    venenoso = false;
-		listado.add(new Anfibio(nombre,edad,getHabitat(),genero,colorPiel,venenoso));	
+	public static Anfibio crearSalamandra(String nombre, int edad, String genero) {
+	    Anfibio anfibio = new Anfibio(nombre,edad,"selva",genero,"negro y amarillo",false);
+		listado.add(anfibio);	
 		salamandras++;
-		return new Anfibio();
+		return anfibio;
 	}
 	
-	public void setListado(ArrayList<Anfibio> listado) {
-		this.listado = listado;
+	public void setListado(ArrayList<Anfibio> lista) {
+		listado = lista;
 	}
 	public ArrayList<Anfibio> getListado() {
 		return listado;
