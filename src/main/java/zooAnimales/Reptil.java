@@ -19,8 +19,9 @@ public class Reptil extends Animal {
 	
 	public int cantidadReptiles() {
 		int cantidadRe = 0;
-		for (int i = 0 ; i < listado.size(); i++) {
-			cantidadRe++;
+		for (Reptil reptil : listado) {
+			if (reptil != null) {
+			cantidadRe++;}
 		}
 		return cantidadRe;
 	}

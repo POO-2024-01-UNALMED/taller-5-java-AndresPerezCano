@@ -19,11 +19,13 @@ public class Mamifero extends Animal{
 	
 	public int cantidadMamiferos() {
 		int cantidadMa = 0;
-		for (int i = 0 ; i < listado.size(); i++) {
-			cantidadMa++;
+		for (Mamifero mamifero : listado) {
+			if (mamifero != null) {
+			cantidadMa += 1;}
 		}
 		return cantidadMa;
 	}
+	
 	
 	public void crearCaballo(String nombre, int edad, String genero) {
 	    setHabitat("pradera");

@@ -17,8 +17,9 @@ public class Ave extends Animal {
 	
 	public int cantidadAves() {
 		int cantidadAv = 0;
-		for (int i = 0 ; i < listado.size(); i++) {
-			cantidadAv++;
+		for (Ave ave : listado) {
+			if (ave != null) {
+			cantidadAv++;}
 		}
 		return cantidadAv;
 	}

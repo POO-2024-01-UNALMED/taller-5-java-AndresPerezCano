@@ -19,8 +19,9 @@ public class Anfibio extends Animal {
 	
 	public int cantidadAnfibios() {
 		int cantidadAn = 0;
-		for (int i = 0 ; i < listado.size(); i++) {
-			cantidadAn++;
+		for (Anfibio anfibio : listado) {
+			if (anfibio != null) {
+			cantidadAn++;}
 		}
 		return cantidadAn;
 	}

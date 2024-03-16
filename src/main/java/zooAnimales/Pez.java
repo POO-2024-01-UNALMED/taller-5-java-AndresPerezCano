@@ -19,8 +19,9 @@ public class Pez extends Animal{
 	
 	public int cantidadPeces() {
 		int cantidadPe = 0;
-		for (int i = 0 ; i < listado.size(); i++) {
-			cantidadPe++;
+		for (Pez pez : listado) {
+			if (pez != null) {
+			cantidadPe++;}
 		}
 		return cantidadPe;
 	}
