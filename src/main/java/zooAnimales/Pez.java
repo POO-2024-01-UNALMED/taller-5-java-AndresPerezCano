@@ -59,7 +59,7 @@ public class Pez extends Animal{
 	public void setCantidadAletas(int cantidadAletas) {
 		this.cantidadAletas = cantidadAletas;
 	}
-	public int getLargoCola() {
+	public int getcantidadAletas() {
 		return this.cantidadAletas;
 	}
 
