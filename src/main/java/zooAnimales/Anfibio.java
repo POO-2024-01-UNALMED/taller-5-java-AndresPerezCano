@@ -9,6 +9,11 @@ public class Anfibio extends Animal {
 	private String colorPiel;
 	private boolean venenoso;
 	
+	static {
+		listado = new ArrayList<Anfibio>();
+	}
+
+	
 	public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso){
 		super(nombre, edad, habitat, genero);
 		this.colorPiel = colorPiel;
