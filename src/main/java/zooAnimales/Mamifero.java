@@ -10,6 +10,7 @@ public class Mamifero extends Animal{
 	public static int leones;
 	private boolean pelaje;
 	private int patas;
+	static int cantMa;
 	
 	static {
 		listado = new ArrayList<Mamifero>();
@@ -19,9 +20,12 @@ public class Mamifero extends Animal{
 		super(nombre, edad, habitat, genero);
 		this.pelaje = pelaje;
 		this.patas = patas;
+		Mamifero.cantMa++;
 	}
 	
-	public Mamifero() {}
+	public Mamifero() {
+		Mamifero.cantMa++;
+	}
 	
 	public int cantidadMamiferos() {
 		int cantidadMa = 0;

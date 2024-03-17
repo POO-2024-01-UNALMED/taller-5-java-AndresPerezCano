@@ -28,20 +28,15 @@ public class Animal {
     	return "desplazarse";
     }
     public static String totalPorTipo() {
-    	Mamifero mamifero = new Mamifero();
-    	Ave ave = new Ave();
-    	Reptil reptil = new Reptil();
-    	Pez pez = new Pez();
-    	Anfibio anfibio = new Anfibio();
-    	return "Mamiferos: " + mamifero.cantidadMamiferos() +
-    			"\nAves: " + ave.cantidadAves() + 
-    			"\nReptiles: " + reptil.cantidadReptiles() +
-    			"\nPeces: " + pez.cantidadPeces() +
-    			"\nAnfibios: " + anfibio.cantidadAnfibios();
+    	return "Mamiferos: " + Mamifero.cantMa +
+    			"\nAves: " + Ave.cantAv + 
+    			"\nReptiles: " + Reptil.cantRe +
+    			"\nPeces: " + Pez.cantPe +
+    			"\nAnfibios: " + Anfibio.cantAn;
     }
     
     public String toString() {
-         String info = "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + "y mi genero es " + genero;
+         String info = "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es " + genero;
          if (zona != null) {
         	 info += ", la zona en la que me ubico es " + zona.getNombre() + ", en el " + zona.getZoo().getNombre();
          }

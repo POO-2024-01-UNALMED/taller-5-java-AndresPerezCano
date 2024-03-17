@@ -8,6 +8,7 @@ public class Anfibio extends Animal {
 	public static int salamandras;
 	private String colorPiel;
 	private boolean venenoso;
+	static int cantAn;
 	
 	static {
 		listado = new ArrayList<Anfibio>();
@@ -18,9 +19,12 @@ public class Anfibio extends Animal {
 		super(nombre, edad, habitat, genero);
 		this.colorPiel = colorPiel;
 		this.venenoso = venenoso;
+		Anfibio.cantAn++;
 	}
 	
-	public Anfibio() {}
+	public Anfibio() {
+		Anfibio.cantAn++;
+	}
 	
 	public int cantidadAnfibios() {
 		int cantidadAn = 0;
