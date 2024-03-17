@@ -33,11 +33,11 @@ public class Animal {
     	Reptil reptil = new Reptil();
     	Pez pez = new Pez();
     	Anfibio anfibio = new Anfibio();
-    	return "Mamiferos: " + mamifero.cantidadMamiferos() + "\n" +
-    			"Aves: " + ave.cantidadAves() + "\n" +
-    			"Reptiles: " + reptil.cantidadReptiles() + "\n" +
-    			"Peces: " + pez.cantidadPeces() + "\n" +
-    			"Anfibios: " + anfibio.cantidadAnfibios();
+    	return "Mamiferos: " + mamifero.cantidadMamiferos() +
+    			"\nAves: " + ave.cantidadAves() + 
+    			"\nReptiles: " + reptil.cantidadReptiles() +
+    			"\nPeces: " + pez.cantidadPeces() +
+    			"\nAnfibios: " + anfibio.cantidadAnfibios();
     }
     
     public String toString() {
